@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+body{
+    margin: 5rem 4rem 5rem 2rem;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container_left{
+    background: url(assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 3rem 10rem 5rem 3rem;
+    
+}
+
+.container_right{
+    
+}
+
+.info,.plan,.addons,.summary{
+    display: flex;
+    gap: 2rem;
+}
+
+h1,p{
+    color: hsl(213, 96%, 18%);
+}
+
+input{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+    border-color: hsl(231, 11%, 63%);
+   
+}
