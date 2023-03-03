@@ -9,8 +9,10 @@
 
 
 body{
-    margin: 5rem 4rem 5rem 2rem;
+    margin-top: 5rem;
+   justify-content: center;
     display: flex;
+    gap: 4rem;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -18,21 +20,24 @@ body{
 .container_left{
     background: url(assets/images/bg-sidebar-desktop.svg);
     background-repeat: no-repeat;
-    height: 100vh;
-    padding: 3rem 10rem 5rem 3rem;
-    
+    height: 100rem;
+    padding: 3rem 10rem 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.container_right{
-    
+.container_left p{
+    text-transform: uppercase;
+    color: white;
 }
 
 .info,.plan,.addons,.summary{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-h1,p{
+h1, .container_right p{
     color: hsl(213, 96%, 18%);
 }
 
@@ -41,5 +46,52 @@ input{
     padding: 1rem;
     width: 100%;
     border-color: hsl(231, 11%, 63%);
+    font-size: large;
    
+}
+
+h3{
+    color: white;
+    border: 1px solid white;
+    border-radius: 80%;
+    padding: 0.5rem 0.9rem;
+}
+
+.step1,.step2,.step3,.step4{
+   display: flex;
+   flex-direction: column;
+   gap: 0.2rem;
+}
+
+.container_right{
+    margin-top: 4.5rem;
+    width: 36%;
+}
+
+.personal_info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.name,.email,.phone_number{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.details{
+    font-size: larger;
+}
+
+button{
+    margin-top: 1rem;
+    margin-left: 27rem;
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+    text-align: center;
 }
