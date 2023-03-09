@@ -46,7 +46,7 @@
   </div>
   <!-- Sidebar end -->
 </div>
-<div class="container_right">
+<div class="container_right_one">
   <!-- Step 1 start -->
   <div class="form">
   <div class="personal_info">
@@ -55,22 +55,140 @@
   </div>
 <div class="name">
  <p>Name</p> 
- <input type="text" placeholder="e.g. Stephen King" required></input> 
+ <input type="text" placeholder="e.g. Stephen King" class="input_field" required></input> 
 </div>
 <div class="email">
   <p>Email Address</p>
-  <input type="text" placeholder="e.g. stephenking@lorem.com" required></input> 
+  <input type="text" placeholder="e.g. stephenking@lorem.com" class="input_field" required></input> 
 </div>
 <div class="phone_number">
   <p>Phone Number</p>
-  <input type="text" placeholder="e.g. +1 234 567 890" required></input> 
+  <input type="text" placeholder="e.g. +1 234 567 890" class="input_field" required></input> 
 </div>
 </div>
-<div class="next_step">
- <button type="submit">Next Step</button> 
+<div>
+ <button type="submit" id="next_step_btn">Next Step</button> 
   <!-- Step 1 end -->
 </div>
 </div> 
+
+<div class="container_right_two">
+  <div class="select_plan">
+    <h1>Select your plan</h1>
+    <p class="selection" style="color:hsl(231, 11%, 63%);">You have the option of monthly or yearly billing.</p>
+  </div>
+  <form>
+  <div class="three_plans">
+    <div class="arcade">
+      <img src="./assets/images/icon-arcade.svg" alt="Arcade Icon">
+      <div class="arcade_noimage">
+      <h2>Arcade</h2>
+      <p>$9/mo</p>
+    </div>
+    </div>
+    <div class="advanced">
+      <img src="./assets/images/icon-advanced.svg" alt="Advanced Icon">
+      <div class="advanced_noimage">
+      <h2>Advanced</h2>
+      <p>$12/mo</p>
+    </div>
+    </div>
+    <div class="pro">
+      <img src="./assets/images/icon-pro.svg" alt="Pro Icon">
+      <div class="pro_noimage">
+      <h2>Pro</h2>
+      <p>$15/mo</p>
+    </div>
+    </div>
+  </div>
+  </form>
+  <div class="switcher">
+    <p class="monthly">Monthly</p>
+    <label class="switch">
+      <input type="checkbox">
+      <p class="slider"></p>
+    </label>
+    <p class="yearly">Yearly</p>
+  </div>
+  <div class="buttons">
+    <button class="previous" type="button">Go Back</button>
+    <button class="next" type="submit">Next Step</button>
+  </div>
+</div>
+
+<div class="container_right_three">
+  <div class="pick_addons">
+    <h1>Pick add-ons</h1>
+    <p class="picking" style="color:hsl(231, 11%, 63%);">Add-ons help enhance your gaming experience.</p>
+  </div>
+  <form>
+    <div class="three_addons">
+      <div class="addone_one">
+        <input type="checkbox" id="online">
+        <div class="online_service">
+          <label for="online">Online service</label>
+          <p>Access to multiplayer games</p>
+        </div>
+        <p>+$1/mo</p>
+      </div>
+      <div class="addone_two">
+        <input type="checkbox" id="storage">
+        <div class="larger_storage">
+          <label for="storage">Larger storage</label>
+          <p>Extra 1TB of cloud save</p>
+        </div>
+        <p>+$2/mo</p>
+      </div>
+      <div class="addone_three">
+        <input type="checkbox" id="customizable">
+        <div class="customizable_profile">
+          <label for="customizable">Customizable Profile</label>
+          <p>Custom theme on your profile</p>
+        </div>
+        <p>+$2/mo</p>
+      </div>
+    </div>
+  </form>
+  <div class="buttons">
+    <button class="previous" type="button">Go Back</button>
+    <button class="next" type="submit">Next Step</button>
+  </div>
+</div>
+<div class="container_right_four">
+  <div class="summary">
+    <h1>Finishing up</h1>
+    <p class="double_check" style="color:hsl(231, 11%, 63%);">Double check everything looks OK before confirming.</p>
+  </div>
+  <div class="selection_box">
+    <div class="selection_container">
+      <div class="selected_plan">
+        <p class="plan_name">Arcade (Monthly)</p>
+        <p class="plan_price">$9/mo</p>
+      </div>
+      <hr>
+      <div class="addons">
+        <template>
+          <div class="selected_addon">
+            <p class="service_name">Online service</p>
+            <p class="service_price">+41/mo</p>
+          </div>
+        </template>
+      </div>
+    </div>
+    <p class="total">Total (per month) <h2>+$12/mo</h2> </p>
+  </div>
+  <div class="buttons">
+    <button class="previous" type="button">Go Back</button>
+    <button class="next" type="submit">Next Step</button>
+  </div>
+</div>
+<div class="container_right_five">
+  <img src="./assets/images/icon-thank-you.svg" alt="Check Icon">
+  <div class="thank_you">
+    <h1>Thank you!</h1>
+    <p class="thanks_text" style="color:hsl(231, 11%, 63%);">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
+  </div>
+</div>
   
 </body>
 <script src="script.js"></script>

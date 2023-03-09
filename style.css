@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overlow: hidden;
 }
 
 
@@ -37,7 +37,8 @@ body{
     gap: 1rem;
 }
 
-h1, .container_right p{
+h1, .container_right_one
+ p{
     color: hsl(213, 96%, 18%);
 }
 
@@ -61,11 +62,11 @@ h3{
     cursor: pointer;
 }
 
-h3:active, h3:hover{
+/* h3:active, h3:hover{
     background-color: hsl(228, 100%, 84%);
     color: hsl(213, 96%, 18%);
     border: 1px solid hsl(228, 100%, 84%);
-}
+} */
 
 .step1,.step2,.step3,.step4{
    display: flex;
@@ -73,7 +74,7 @@ h3:active, h3:hover{
    gap: 0.2rem;
 }
 
-.container_right{
+.container_right_one{
     margin-top: 4.5rem;
     width: 36%;
 }
