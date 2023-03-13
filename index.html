@@ -11,6 +11,7 @@
   <title>Frontend Mentor | Multi-step form</title>
 </head>
 <body>
+  <div class="main_container">
   <div class="container_left">
   <!-- Sidebar start -->
   <div class="info">
@@ -66,7 +67,7 @@
   <input type="text" placeholder="e.g. +1 234 567 890" class="input_field" required></input> 
 </div>
 </div>
-<div>
+<div class="button_step1">
  <button type="submit" id="next_step_btn">Next Step</button> 
   <!-- Step 1 end -->
 </div>
@@ -123,29 +124,29 @@
   </div>
   <form>
     <div class="three_addons">
-      <div class="addone_one">
+      <div class="addon_one">
         <input type="checkbox" id="online">
         <div class="online_service">
           <label for="online">Online service</label>
           <p>Access to multiplayer games</p>
         </div>
-        <p>+$1/mo</p>
+        <p class="price_3">+$1/mo</p>
       </div>
-      <div class="addone_two">
+      <div class="addon_two">
         <input type="checkbox" id="storage">
         <div class="larger_storage">
           <label for="storage">Larger storage</label>
           <p>Extra 1TB of cloud save</p>
         </div>
-        <p>+$2/mo</p>
+        <p class="price_3">+$2/mo</p>
       </div>
-      <div class="addone_three">
+      <div class="addon_three">
         <input type="checkbox" id="customizable">
         <div class="customizable_profile">
           <label for="customizable">Customizable Profile</label>
           <p>Custom theme on your profile</p>
         </div>
-        <p>+$2/mo</p>
+        <p class="price_3">+$2/mo</p>
       </div>
     </div>
   </form>
@@ -155,7 +156,7 @@
   </div>
 </div>
 <div class="container_right_four">
-  <div class="summary">
+  <div class="finish">
     <h1>Finishing up</h1>
     <p class="double_check" style="color:hsl(231, 11%, 63%);">Double check everything looks OK before confirming.</p>
   </div>
@@ -165,21 +166,24 @@
         <p class="plan_name">Arcade (Monthly)</p>
         <p class="plan_price">$9/mo</p>
       </div>
-      <hr>
+      <hr/>
       <div class="addons">
         <template>
           <div class="selected_addon">
             <p class="service_name">Online service</p>
-            <p class="service_price">+41/mo</p>
+            <p class="service_price">+1/mo</p>
           </div>
         </template>
       </div>
     </div>
-    <p class="total">Total (per month) <h2>+$12/mo</h2> </p>
+    <div class="total_price">
+      <p class="total">Total (per month)</p>
+      <h2>+$12/mo</h2>
+    </div> 
   </div>
   <div class="buttons">
     <button class="previous" type="button">Go Back</button>
-    <button class="next" type="submit">Next Step</button>
+    <button class="next" type="submit">Confirm</button>
   </div>
 </div>
 <div class="container_right_five">
@@ -189,7 +193,7 @@
     <p class="thanks_text" style="color:hsl(231, 11%, 63%);">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
   </div>
 </div>
-  
+</div>
 </body>
 <script src="script.js"></script>
 <!-- <footer>
