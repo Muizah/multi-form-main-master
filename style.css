@@ -24,19 +24,20 @@ body{
     width: 900px;
     border-radius: 1rem;
     box-shadow: 0px 0px 1px black;
-    height: 80vh;
+    padding: 1rem;
 }
 
 .container_left{
     background: url(assets/images/bg-sidebar-desktop.svg);
     background-repeat: no-repeat;
-    height: 100rem;
-    padding: 3rem 10rem 5rem 2rem;
+    height: 568px;
+    width: 400px;
+    padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 1.2rem;
-    margin-left: 1rem;
+    /* margin-top: 1.2rem; */
+    /* margin-left: 1rem; */
 }
 
 .container_left p{
