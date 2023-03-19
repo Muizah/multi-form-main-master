@@ -15,7 +15,7 @@
   <div class="container_left">
   <!-- Sidebar start -->
   <div class="info">
-  <h3 id="step_one_btn">1</h3>
+  <h3 id="step_one_btn" class="step">1</h3>
   <div class="step1">
   <p style="color:hsl(229, 24%, 87%);">Step 1</p>
   <p>Your info</p> 
@@ -23,7 +23,7 @@
   </div>
 
   <div class="plan">
-  <h3 id="step_two_btn">2</h3>
+  <h3 id="step_two_btn" class="step">2</h3>
   <div class="step2">
   <p style="color:hsl(229, 24%, 87%);">Step 2</p>
   <p>Select plan</p>
@@ -31,7 +31,7 @@
   </div>
 
   <div class="addons">
-  <h3 id="step_three_btn">3</h3>
+  <h3 id="step_three_btn" class="step">3</h3>
   <div class="step3">
   <p style="color:hsl(229, 24%, 87%);">Step 3</p>
   <p>Add-ons</p>
@@ -39,7 +39,7 @@
   </div>
 
   <div class="summary">
-  <h3 id="step_four_btn">4</h3>
+  <h3 id="step_four_btn" class="step">4</h3>
   <div class="step4">
   <p style="color:hsl(229, 24%, 87%);">Step 4</p>
   <p>Summary</p>
@@ -47,12 +47,12 @@
   </div>
   <!-- Sidebar end -->
 </div>
-<div class="container_right_one">
+<div id="container_right_one" class="container">
   <!-- Step 1 start -->
   <div class="form">
   <div class="personal_info">
   <h1>Personal info</h1>
-  <p class="details" style="color:hsl(231, 11%, 63%);"> Please provide your name, email address, and phone number.</p>
+  <p class="details"> Please provide your name, email address, and phone number.</p>
   </div>
 <div class="name">
  <p>Name</p> 
@@ -73,28 +73,28 @@
 </div>
 </div> 
 
-<div class="container_right_two">
+<div id="container_right_two" class="container">
   <div class="select_plan">
     <h1>Select your plan</h1>
-    <p class="selection" style="color:hsl(231, 11%, 63%);">You have the option of monthly or yearly billing.</p>
+    <p class="selection">You have the option of monthly or yearly billing.</p>
   </div>
   <form>
   <div class="three_plans">
-    <div class="arcade">
+    <div id="arcade" class="pick_plan">
       <img src="./assets/images/icon-arcade.svg" alt="Arcade Icon">
       <div class="arcade_noimage">
       <h4>Arcade</h4>
       <p>$9/mo</p>
     </div>
     </div>
-    <div class="advanced">
+    <div id="advanced" class="pick_plan">
       <img src="./assets/images/icon-advanced.svg" alt="Advanced Icon">
       <div class="advanced_noimage">
       <h4>Advanced</h4>
       <p>$12/mo</p>
     </div>
     </div>
-    <div class="pro">
+    <div id="pro" class="pick_plan">
       <img src="./assets/images/icon-pro.svg" alt="Pro Icon">
       <div class="pro_noimage">
       <h4>Pro</h4>
@@ -117,14 +117,14 @@
   </div>
 </div>
 
-<div class="container_right_three">
+<div id="container_right_three" class="container">
   <div class="pick_addons">
     <h1>Pick add-ons</h1>
-    <p class="picking" style="color:hsl(231, 11%, 63%);">Add-ons help enhance your gaming experience.</p>
+    <p class="picking">Add-ons help enhance your gaming experience.</p>
   </div>
   <form>
     <div class="three_addons">
-      <div class="addon_one">
+      <div id="addon_one" class="add_on">
         <input type="checkbox" id="online">
         <div class="online_service">
           <label for="online">Online service</label>
@@ -132,7 +132,7 @@
         </div>
         <p class="price_3">+$1/mo</p>
       </div>
-      <div class="addon_two">
+      <div id="addon_two" class="add_on">
         <input type="checkbox" id="storage">
         <div class="larger_storage">
           <label for="storage">Larger storage</label>
@@ -140,7 +140,7 @@
         </div>
         <p class="price_3">+$2/mo</p>
       </div>
-      <div class="addon_three">
+      <div id="addon_three" class="add_on">
         <input type="checkbox" id="customizable">
         <div class="customizable_profile">
           <label for="customizable">Customizable Profile</label>
@@ -155,10 +155,10 @@
     <button class="next" type="submit">Next Step</button>
   </div>
 </div>
-<div class="container_right_four">
+<div id="container_right_four" class="container">
   <div class="finish">
     <h1>Finishing up</h1>
-    <p class="double_check" style="color:hsl(231, 11%, 63%);">Double check everything looks OK before confirming.</p>
+    <p class="double_check">Double check everything looks OK before confirming.</p>
   </div>
   <div class="selection_box">
     <div class="selection_container">
@@ -186,11 +186,11 @@
     <button class="next" type="submit">Confirm</button>
   </div>
 </div>
-<div class="container_right_five">
+<div id="container_right_five" class="container">
   <img src="./assets/images/icon-thank-you.svg" alt="Check Icon">
   <div class="thank_you">
     <h1>Thank you!</h1>
-    <p class="thanks_text" style="color:hsl(231, 11%, 63%);">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
+    <p class="thanks_text">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
   </div>
 </div>
 </div>

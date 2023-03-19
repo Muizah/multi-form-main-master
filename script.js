@@ -1,9 +1,23 @@
-const stepOne = document.getElementById("step_one_btn");
-const stepTwo = document.getElementById("step_two_btn");
-const stepThree = document.getElementById("step_three_btn");
-const stepFour = document.getElementById("step_four_btn");
-const nextStep = document.getElementById("next_step_btn");
-const inputFields = document.getElementsByClassName("input_field");
-const rightContainer = document.getElementsByClassName("container_right");
+const rightContainers = document.querySelectorAll(".container");
+const steps = document.querySelectorAll(".step");
+const stepOneInput = document.querySelectorAll(".container_right_one input")
+const pickPlan = document.querySelectorAll(".pick_plan")
+const switcher = document.querySelector(".switch");
+const addons = document.querySelector(".add_on");
+const totalPrice = document.querySelector(".total");
+const planPrice = document.querySelector(".plan_price");
+const nextBtn = document.querySelectorAll(".next");
+const prevBtn = document.querySelectorAll(".previous");
+const nextStepBtn = document.querySelector("#next_step_btn")
 
+// let time;
+// let currentContainer = 1;
+// let currentStep = 0;
 
+// if(prevBtn) {
+// prevBtn.addEventListener("click", () => {
+//     document.querySelector(`.step-${currentContainer}`).style.display = "none";
+//     currentContainer--;  
+//     document.querySelector(`.step-${currentContainer}`).style.display = "flex";
+//     steps [currentStep].classList.remove("active")
+// })}

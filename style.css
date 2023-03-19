@@ -24,7 +24,8 @@ body{
     width: 900px;
     border-radius: 1rem;
     box-shadow: 0px 0px 1px black;
-    padding: 1rem;
+    padding: 0 1rem;
+    align-items: center;
 }
 
 .container_left{
@@ -36,8 +37,12 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /* margin-top: 1.2rem; */
-    /* margin-left: 1rem; */
+    margin: 1rem 0;
+}
+
+#step_one_btn{
+    background-color: hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%);
 }
 
 .container_left p{
@@ -48,9 +53,10 @@ body{
 .info,.plan,.addons,.summary{
     display: flex;
     gap: 0.75rem;
+    align-items: center;
 }
 
-h1, .container_right_one
+h1, #container_right_one
  p{
     color: hsl(213, 96%, 18%);
 }
@@ -81,10 +87,10 @@ h3{
    gap: 0.2rem;
 }
 
-.container_right_one{
+#container_right_one{
     margin-top: 4.5rem;
-    width: 60%;
-    padding-right: 6.5rem;
+    width: 80%;
+    padding-right: 4rem;
 }
 
 .personal_info{
@@ -106,7 +112,7 @@ h3{
     font-size: larger;
 }
 
-.container_right_one button{
+#container_right_one button{
     margin-top: 1rem;
     color: white;
     background-color: hsl(213, 96%, 18%);
@@ -120,16 +126,16 @@ h3{
     justify-content: end;
 }
 
-.container_right_two{
+#container_right_two{
     margin-top: 4.5rem;
-    width: 60%;
+    width: 80%;
 }
 
 .three_plans p{
     color: hsl(231, 11%, 63%);
 }
 
-.container_right_two h4{
+#container_right_two h4{
     color: hsl(213, 96%, 18%);
 }
 
@@ -145,7 +151,7 @@ h3{
     gap: 1rem;
 }
 
-.arcade, .advanced, .pro{
+#arcade, #advanced, #pro{
     border: 1px solid hsl(229, 24%, 87%);
     padding: 1rem;
     min-width: 10rem;
@@ -154,6 +160,11 @@ h3{
     gap: 3rem;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#arcade{
+    border: 2px solid hsl(243, 100%, 62%);
+    background-color: hsl(217, 100%, 97%);
 }
 
 img {
@@ -167,7 +178,7 @@ img {
     gap: 1rem;
     margin-top: 2rem;
     padding: 0.5rem;
-    width: 32rem;
+    width: autos;
   }
 
 .switch{
@@ -247,9 +258,9 @@ img {
     color: hsl(231, 11%, 63%);
 }
 
-.container_right_three{
+#container_right_three{
     margin-top: 4.5rem;
-    width: 60%;
+    width: 80%;
 }
 
 .pick_addons{
@@ -286,7 +297,7 @@ img {
     color: hsl(231, 11%, 63%);
 }
 
-.container_right_three label{
+#container_right_three label{
     font-weight: 700; 
     color: hsl(213, 96%, 18%);
 }
@@ -295,7 +306,7 @@ img {
     color: hsl(243, 100%, 62%);
 }
 
-.container_right_three form input {
+#container_right_three form input {
     accent-color: hsl(243, 100%, 62%);
   }
 
@@ -304,9 +315,9 @@ img {
     background-color: hsl(217, 100%, 97%);
   }  
 
-.container_right_four{
+#container_right_four{
     margin-top: 4.5rem;
-    width: 50%;
+    width: 80%;
 }
 
 .finish{
@@ -342,12 +353,12 @@ img {
     color: hsl(231, 11%, 63%);
 }
 
-.container_right_five{
+#container_right_five{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 80%;
     text-align: center;
     gap: 2rem;
     padding-right: 5.5rem;
@@ -361,6 +372,156 @@ img {
     line-height: 2rem;
 }
 
-.container_right_two, .container_right_three, .container_right_four, .container_right_five{
+.details, .selection, .picking, .double_check, .thanks_text{
+    color: hsl(231, 11%, 63%);
+}
+
+#container_right_two, #container_right_three, #container_right_four, #container_right_five{
     display: none;
+}
+
+@media screen and (max-width: 500px) {
+body{
+    position: relative;
+}
+
+.container_left{
+    background-image: url(assets/images/bg-sidebar-mobile.svg);
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: -1;
+}
+
+.step1,.step2,.step3,.step4{
+    display: none;
+}    
+
+.main_container{
+    position: absolute;
+    top: 8.5rem;
+    max-width: 375px;
+}
+
+#container_right_one{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0;
+}
+
+.details, .selection, .picking, .double_check{
+    font-size: large;
+}
+
+.button_step1{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 6rem;
+    padding-inline: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#container_right_two{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 6rem;
+    padding-inline: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.three_plans{
+    flex-direction: column;
+    max-height: 320px;
+}
+
+#arcade, #advanced, #pro{
+    width: 100%;
+    height: 120px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+}
+
+#arcade{
+    border: 2px solid hsl(243, 100%, 62%);
+    background-color: hsl(217, 100%, 97%);
+}
+
+.switcher{
+    margin: 3rem 0;
+}
+
+#container_right_three{
+    width: 100%;
+    padding: 2rem 1rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.addon_one, .addon_two, .addon_three{
+    display: flex;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 5px;
+    padding: 1rem;
+    width: auto;
+    cursor: pointer;
+    font-size: smaller;
+    font-weight: 500;
+}
+
+#container_right_four{
+    width: 100%;
+    padding: 2rem 1rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.finish{
+    margin-bottom: auto;
+}
+
+#container_right_five{
+    width: 100%;
+    padding: 2rem 1rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.thanks_text{
+    font-size: medium;
+    padding: 0.5rem;
+}
+
+#container_right_two, #container_right_three, #container_right_four, #container_right_five{
+    display: none;
+}
 }
